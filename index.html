@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tooldeck Pin Publisher: Privacy Policy</title>
+<title>Tooldeck Social Publisher and Tooldeck Pin Publisher: Privacy Policy</title>
 <style>
   body { margin: 0; background: #ffffff; color: #1f2328; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
@@ -20,47 +20,145 @@
 </head>
 <body>
 <main>
-<h1>Tooldeck Pin Publisher: Privacy Policy</h1>
-<p class="meta">Last updated: October 31, 2026</p>
+<h1>Tooldeck Social Publisher and Tooldeck Pin Publisher: Privacy Policy</h1>
+<p class="meta">Last updated: November 2, 2026</p>
 
 <h2>Who we are</h2>
-<p>Tooldeck is a shop on Etsy that sells digital tools: <a href="https://tooldeck.etsy.com" rel="noopener noreferrer">tooldeck.etsy.com</a>. This page describes the Tooldeck Pin Publisher, an internal tool that Tooldeck uses to publish Pins to its own Pinterest business account. The tool has no other users. It is not offered or sold to anyone.</p>
+<p>Tooldeck is a shop on Etsy that sells digital tools: <a href="https://tooldeck.etsy.com" rel="noopener noreferrer">tooldeck.etsy.com</a>. This page describes two internal tools that Tooldeck uses to manage its own social media accounts: the Tooldeck Pin Publisher, for Pinterest, and the Tooldeck Social Publisher, for Instagram and YouTube. Neither tool has other users. They are not offered or sold to anyone, and each connects only to Tooldeck's own accounts.</p>
 
-<h2>What the tool does</h2>
+<h2>Pinterest: Tooldeck Pin Publisher</h2>
+<p>The Tooldeck Pin Publisher is an internal tool that Tooldeck uses to publish Pins to its own Pinterest business account. The tool has no other users. It is not offered or sold to anyone.</p>
+
+<h2>Pinterest: what the tool does</h2>
 <ul>
   <li>Publishes image Pins and video Pins to the Tooldeck Pinterest account. A person at Tooldeck reviews and approves every Pin before it is published.</li>
   <li>Deletes Pins that Tooldeck created, for example when the Etsy listing a Pin links to is no longer available. A person at Tooldeck approves every deletion first.</li>
   <li>Reads the boards, Pins and analytics of the Tooldeck Pinterest account only.</li>
+  <li>Checks which Pinterest account is connected (its username and account type), so that the tool acts only on the Tooldeck business account.</li>
 </ul>
+<p>The permission that Pinterest describes as "See your user accounts and followers" is needed to read the totals of our own account and to confirm which account is connected. The tool does not request the list of followers or any information about a follower, and it does not keep follower numbers.</p>
 <p>The tool does not read, collect or store information about other Pinterest users. It does not read, send or reply to messages or comments, and it does not follow accounts or save other people's Pins.</p>
 
-<h2>Information we keep</h2>
+<h2>Pinterest: information we keep</h2>
 <ul>
   <li><strong>Access tokens and app credentials.</strong> The Pinterest access and refresh tokens for the Tooldeck account, and the credentials of our developer app, are stored on Tooldeck's own computer, outside any cloud-synced folder. They are not shared with anyone.</li>
-  <li><strong>Publishing log.</strong> For each Pin we publish, we keep the content we sent (our own text and image), the Pin ID returned by Pinterest, its status and the time.</li>
+  <li><strong>Publishing log.</strong> For each Pin we publish or delete, and for each attempt that fails, we keep our own queue ID, the Pin ID returned by Pinterest, the status (including a failed status with our own error code) and the time. The content of our Pins (our own text and image) is kept in our own queue files.</li>
   <li><strong>Weekly totals.</strong> We keep weekly summary numbers for our own account (for example, total Pin impressions, saves and outbound clicks) in our internal reports.</li>
 </ul>
 <p>We do not keep any other information that we access through the Pinterest API.</p>
 
-<h2>What we do not do</h2>
+<h2>Pinterest: what we do not do</h2>
 <ul>
-  <li>We do not sell Pinterest information or share it with third parties, except the service providers we use to run our tools, such as the AI assistant that helps us write our weekly summary.</li>
+  <li>We do not sell Pinterest information or share it with third parties, except the service providers we use to run our tools, such as the AI assistant that helps us operate the tool and write our weekly summary.</li>
   <li>We do not use information from Pinterest for advertising.</li>
   <li>We do not combine information from Pinterest with information about our Etsy buyers.</li>
   <li>We do not use information from Pinterest to train artificial intelligence or machine learning models.</li>
 </ul>
 
+<h2>Pinterest: retention and deletion</h2>
+<p>We keep the publishing log and weekly totals for as long as we use the tool. If we stop using the tool, we revoke its access to Pinterest and delete the tokens, the app credentials, the log and the weekly totals. The account owner can also revoke the tool's access at any time in the Pinterest account settings.</p>
+
+<h2>Instagram: Tooldeck Social Publisher</h2>
+<p>The Tooldeck Social Publisher is an internal tool that Tooldeck uses to manage its own Instagram professional account. It connects to Instagram through Instagram's own API, with the login of the Tooldeck account. The tool has no other users. It is not offered or sold to anyone.</p>
+
+<h2>Instagram: what the tool does</h2>
+<ul>
+  <li>Publishes images and videos to the Tooldeck Instagram account. A person at Tooldeck reviews and approves every post before it is published.</li>
+  <li>Reads the comments that other people write on posts of the Tooldeck account. It can reply to a comment, hide a comment or delete a comment, on our own posts only. A person at Tooldeck approves each reply, hide and delete one by one, before it is carried out. Nothing is sent, hidden or deleted automatically.</li>
+  <li>Reads summary numbers of the Tooldeck account as a whole (for example, views and reach).</li>
+  <li>Checks which Instagram account is connected, so that the tool acts only on the Tooldeck account.</li>
+</ul>
+<p>The tool does <strong>not</strong> read, send or reply to private messages. It does not delete posts: when we remove a post, we do it by hand in the Instagram app. It does not follow, like or message any account, does not look at other accounts, and does not collect or search for information about other Instagram users.</p>
+
+<h2>Instagram: information about other people</h2>
+<p>When the tool reads a comment on one of our posts, Instagram gives it the text of the comment, the username of the person who wrote it, their Instagram-scoped ID (a number that Instagram uses for that person) and the time of the comment. We use this information only to decide on, write and carry out our reply to that comment, or to hide or delete it.</p>
+<ul>
+  <li>The information is read from Instagram at the moment we need it. We do not save it in our files, logs, reports or lists.</li>
+  <li>An AI assistant, which is an outside service provider (see "Service providers"), helps us write a draft reply and sees the comment text and username while it does so. A person at Tooldeck then reads the draft and approves it, or not.</li>
+  <li>While we work, the comment can appear in the working session of the AI assistant. That session may be kept for a limited time on our own computer and by the service provider, under the provider's terms.</li>
+  <li>For each reply, hide or delete, we keep only our own record: the comment ID, the action, the result and the time. We do not keep the comment text or the username in that record.</li>
+</ul>
+<p>We do not sell this information, use it for advertising, build profiles of people from it, or combine it with information about our Etsy buyers. We do not use information from Instagram to train artificial intelligence or machine learning models.</p>
+
+<h2>Instagram: information we keep</h2>
+<ul>
+  <li><strong>Access tokens and app credentials.</strong> The Instagram access token for the Tooldeck account (it is valid for 60 days and is renewed before it expires), and the credentials of our developer app, are stored on Tooldeck's own computer, outside any cloud-synced folder. They are not shared with anyone.</li>
+  <li><strong>Publishing log.</strong> For each post we publish, and for each attempt that fails, we keep our own queue ID, the post ID returned by Instagram, the status and the time. The content of our posts (our own text and images or videos) is kept in our own queue files.</li>
+  <li><strong>Comment actions log.</strong> For each reply, hide or delete of a comment, we keep the comment ID, the action, the result and the time (see above).</li>
+  <li><strong>Weekly totals.</strong> We keep weekly summary numbers for our own account in our internal reports.</li>
+</ul>
+<p>We do not keep any other information that we access through the Instagram API.</p>
+
+<h2>Instagram: temporary media storage</h2>
+<p>Instagram does not accept a file sent from our computer. It downloads the image or video from an internet address at the moment of posting. So, to publish a post, the file (an image or video of our own tools, which contains no personal data) is uploaded for a few minutes to a private storage space of our service provider Backblaze, Inc. (Backblaze B2, in its EU region for files). We give Instagram a time-limited link for that file, which we do not publish anywhere. As soon as Instagram has downloaded the file, or at the end of the posting run if something goes wrong, we delete the file. A safety rule in the storage space also removes any leftover file within a few days.</p>
+<p>Backblaze also stores basic account data of our own Backblaze account (not data about you) in the United States. We do not upload comments, messages or personal data of other people to this storage.</p>
+
+<h2>Instagram: what we do not do</h2>
+<ul>
+  <li>We do not sell Instagram information or share it with third parties, except the service providers described below.</li>
+  <li>We do not use information from Instagram for advertising.</li>
+  <li>We do not combine information from Instagram with information about our Etsy buyers.</li>
+  <li>We do not use information from Instagram to train artificial intelligence or machine learning models.</li>
+</ul>
+
+<h2>Service providers</h2>
+<p>We use service providers to run our tools. They are not allowed to use the information for their own purposes.</p>
+<ul>
+  <li><strong>AI assistant.</strong> An AI assistant helps us operate the tools, write draft replies to comments and write our weekly summary. For Instagram comments it may see the comment text and username, as described above. For YouTube it may see the numbers and video status that we read, while it helps us write our weekly summary; as with Instagram comments, that working session may be kept for a limited time on our own computer and by the service provider, under the provider's terms, and we do not save the numbers in our own files. We use it only on our own instructions.</li>
+  <li><strong>Backblaze, Inc.</strong> Temporary storage of our own post files, as described above.</li>
+</ul>
+
+<h2>Instagram: retention and deletion</h2>
+<p>We keep the publishing log, the comment actions log and the weekly totals for as long as we use the tool. We do not keep the text or usernames of comments. If we stop using the tool, we revoke its access to Instagram and delete the tokens, the app credentials, the logs, the weekly totals and the storage space and keys at Backblaze. The account owner can also remove the tool's access at any time in the Instagram account settings.</p>
+
+<h2>YouTube: Tooldeck Social Publisher</h2>
+<p>The Tooldeck Social Publisher is also an internal tool that Tooldeck uses to manage its own YouTube channel. It connects to YouTube through the YouTube API Services, with the Google login of the Tooldeck channel. The tool has no other users. It is not offered or sold to anyone. By using the tool, its user agrees to be bound by the <a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube Terms of Service</a>.</p>
+
+<h2>YouTube: what the tool does</h2>
+<ul>
+  <li>Uploads videos of our own tools (Shorts) to the Tooldeck YouTube channel. A person at Tooldeck reviews and approves every video, with its title, description, visibility and publishing time, before it is uploaded. Nothing is changed after that approval.</li>
+  <li>Reads the status of the videos that the tool itself uploaded (for example, whether YouTube has finished processing them).</li>
+  <li>Reads summary numbers of the Tooldeck channel as a whole (for example, views).</li>
+  <li>Checks which YouTube channel is connected, so that the tool acts only on the Tooldeck channel.</li>
+</ul>
+<p>The tool does <strong>not</strong> read, write or delete comments, does not edit or delete videos, does not read other people's videos or channels, and does not collect or search for information about other YouTube users. We remove or edit a video by hand in YouTube Studio.</p>
+
+<h2>YouTube: information we keep</h2>
+<ul>
+  <li><strong>Access tokens and app credentials.</strong> The Google access and refresh tokens for the Tooldeck channel, and the credentials of our Google app, are stored on Tooldeck's own computer, outside any cloud-synced folder. They are not shared with anyone.</li>
+  <li><strong>Publishing log.</strong> For each video we upload, and for each attempt that fails, we keep our own queue ID, the video ID returned by YouTube, the status and the time. The content of our videos (our own text and video) is kept in our own queue files.</li>
+</ul>
+<p>We do not store statistics or any other information that we access through the YouTube API Services: channel numbers and video status are read from YouTube at the moment we need them and are not saved. We do not download or copy videos from YouTube.</p>
+
+<h2>YouTube: what we do not do</h2>
+<ul>
+  <li>We do not sell YouTube information or share it with third parties, except the AI assistant described in "Service providers".</li>
+  <li>We do not use information from YouTube for advertising.</li>
+  <li>We do not combine information from YouTube with information about our Etsy buyers.</li>
+  <li>We do not use information from YouTube to train artificial intelligence or machine learning models.</li>
+</ul>
+
+<h2>YouTube: Google, revoking access, retention and deletion</h2>
+<p>The tool's use of Google information is described by the <a href="http://www.google.com/policies/privacy" rel="noopener noreferrer">Google Privacy Policy</a>. The account owner can revoke the tool's access to the Google account at any time on the <a href="https://security.google.com/settings/security/permissions" rel="noopener noreferrer">Google security permissions page</a>. The tool can also revoke its own access: when access is revoked, either way, the tool stops using the tokens right away, deletes them, and deletes any other information it holds from the YouTube API Services within 7 calendar days (normally there is none, apart from the publishing log of our own actions). We keep the publishing log for as long as we use the tool. If we stop using the tool, we revoke its access to Google and delete the tokens, the app credentials and the log.</p>
+
+<h2 id="data-deletion">How to request deletion of your data</h2>
+<p>This applies to everyone whose information may reach the Tooldeck Pin Publisher or the Tooldeck Social Publisher, for example a person who wrote a comment on a Tooldeck Instagram post.</p>
+<ul>
+  <li><strong>What we hold about you.</strong> Normally nothing: we do not save comments, usernames or IDs of other people (see "Instagram: information about other people"). The tools are connected only to Tooldeck's own accounts, so nobody else has given the tools access to their account.</li>
+  <li><strong>How to ask.</strong> Send a message to the Tooldeck shop on Etsy: <a href="https://tooldeck.etsy.com" rel="noopener noreferrer">tooldeck.etsy.com</a>. Write "Data deletion" and your Instagram username, and tell us which post or comment it is about. Sending a message on Etsy needs an Etsy account. Please never send us a password or a login code.</li>
+  <li><strong>What we do.</strong> We check whether we hold anything about you, delete it, and answer you within 30 days.</li>
+  <li><strong>Your own comments.</strong> You can delete a comment you wrote at any time in Instagram. Information that Instagram keeps is controlled by Instagram and its own privacy policy.</li>
+  <li><strong>Access to the tool.</strong> Only the Tooldeck accounts are connected. The account owner can remove the tool's access in the Instagram account settings, the Pinterest account settings and the Google security permissions page.</li>
+</ul>
+
 <h2>This page</h2>
 <p>This page uses no cookies, scripts, analytics or tracking.</p>
-
-<h2>Retention and deletion</h2>
-<p>We keep the publishing log and weekly totals for as long as we use the tool. If we stop using the tool, we revoke its access to Pinterest and delete the tokens, the app credentials, the log and the weekly totals. The account owner can also revoke the tool's access at any time in the Pinterest account settings.</p>
 
 <h2>Contact</h2>
 <p>For questions about this policy, send a message to the Tooldeck shop on Etsy: <a href="https://tooldeck.etsy.com" rel="noopener noreferrer">tooldeck.etsy.com</a>.</p>
 
 <h2>Changes</h2>
-<p>If the tool changes what it does with information from Pinterest, we update this page and the date above before the change takes effect.</p>
+<p>If a tool changes what it does with information from Pinterest, Instagram or YouTube, we update this page and the date above before the change takes effect.</p>
 </main>
 </body>
 </html>
