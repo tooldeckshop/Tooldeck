@@ -59,7 +59,7 @@
 <p>We keep the publishing log and weekly totals for as long as we use the tool. If we stop using the tool, we revoke its access to Pinterest and delete the tokens, the app credentials, the log and the weekly totals. The account owner can also revoke the tool's access at any time in the Pinterest account settings.</p>
 
 <h2>Instagram: Tooldeck Social Publisher</h2>
-<p>The Tooldeck Social Publisher is an internal tool that Tooldeck uses to manage its own Instagram professional account. It connects to Instagram through Instagram's own API, with the login of the Tooldeck account. The tool has no other users. It is not offered or sold to anyone.</p>
+<p>The Tooldeck Social Publisher is an internal tool that Tooldeck uses to manage its own Instagram professional account. It connects to Instagram through Meta's Instagram API. Nobody logs in to the tool: the owner of the Tooldeck account creates an access token in Tooldeck's own Meta business settings, for a system user (a machine account) of the Tooldeck business portfolio, and that token gives the tool access to the Tooldeck Instagram account only. The tool never sees or stores anyone's password. The tool has no other users. It is not offered or sold to anyone.</p>
 
 <h2>Instagram: what the tool does</h2>
 <ul>
@@ -76,21 +76,21 @@
   <li>The information is read from Instagram at the moment we need it. We do not save it in our files, logs, reports or lists.</li>
   <li>An AI assistant, which is an outside service provider (see "Service providers"), helps us write a draft reply and sees the comment text and username while it does so. A person at Tooldeck then reads the draft and approves it, or not.</li>
   <li>While we work, the comment can appear in the working session of the AI assistant. That session may be kept for a limited time on our own computer and by the service provider, under the provider's terms.</li>
-  <li>For each reply, hide or delete, we keep only our own record: the comment ID, the action, the result and the time. We do not keep the comment text or the username in that record.</li>
+  <li>For each reply, hide, unhide or delete, we keep only our own record: the comment ID, the action, the result and the time. We do not keep the comment text or the username in that record.</li>
 </ul>
 <p>We do not sell this information, use it for advertising, build profiles of people from it, or combine it with information about our Etsy buyers. We do not use information from Instagram to train artificial intelligence or machine learning models.</p>
 
 <h2>Instagram: information we keep</h2>
 <ul>
-  <li><strong>Access tokens and app credentials.</strong> The Instagram access token for the Tooldeck account (it is valid for 60 days and is renewed before it expires), and the credentials of our developer app, are stored on Tooldeck's own computer, outside any cloud-synced folder. They are not shared with anyone.</li>
-  <li><strong>Publishing log.</strong> For each post we publish, and for each attempt that fails, we keep our own queue ID, the post ID returned by Instagram, the status and the time. The content of our posts (our own text and images or videos) is kept in our own queue files.</li>
-  <li><strong>Comment actions log.</strong> For each reply, hide or delete of a comment, we keep the comment ID, the action, the result and the time (see above).</li>
+  <li><strong>Access token and app credentials.</strong> The access token of the system user in the Tooldeck business portfolio (it is valid for 60 days and is renewed before it expires), the identifiers of the business portfolio and of the Instagram account, and the credentials of our developer app, are stored on Tooldeck's own computer, outside any cloud-synced folder. They are not shared with anyone.</li>
+  <li><strong>Publishing log.</strong> For each post we publish, and for each attempt that fails, we keep our own queue ID, the post ID returned by Instagram, the status (including a failed status with our own error code) and the time. The content of our posts (our own text and images or videos) is kept in our own queue files.</li>
+  <li><strong>Comment actions log.</strong> For each reply, hide, unhide or delete of a comment, we keep the comment ID, the action, the result (including a failed status with our own error code) and the time (see above).</li>
   <li><strong>Weekly totals.</strong> We keep weekly summary numbers for our own account in our internal reports.</li>
 </ul>
 <p>We do not keep any other information that we access through the Instagram API.</p>
 
 <h2>Instagram: temporary media storage</h2>
-<p>Instagram does not accept a file sent from our computer. It downloads the image or video from an internet address at the moment of posting. So, to publish a post, the file (an image or video of our own tools, which contains no personal data) is uploaded for a few minutes to a private storage space of our service provider Backblaze, Inc. (Backblaze B2, in its EU region for files). We give Instagram a time-limited link for that file, which we do not publish anywhere. As soon as Instagram has downloaded the file, or at the end of the posting run if something goes wrong, we delete the file. A safety rule in the storage space also removes any leftover file within a few days.</p>
+<p>Instagram does not accept a file sent from our computer. It downloads the image or video from an internet address at the moment of posting. So, to publish a post, the file (an image or video of our own tools, which contains no personal data) is uploaded for a few minutes to a private storage space of our service provider Backblaze, Inc. (Backblaze B2, in its EU region for files). We give Instagram a time-limited link for that file, which we do not publish anywhere. As soon as the post is published, or at the end of the posting run if something goes wrong, we delete the file. A safety rule in the storage space also removes any leftover file within a few days.</p>
 <p>Backblaze also stores basic account data of our own Backblaze account (not data about you) in the United States. We do not upload comments, messages or personal data of other people to this storage.</p>
 
 <h2>Instagram: what we do not do</h2>
@@ -109,7 +109,7 @@
 </ul>
 
 <h2>Instagram: retention and deletion</h2>
-<p>We keep the publishing log, the comment actions log and the weekly totals for as long as we use the tool. We do not keep the text or usernames of comments. If we stop using the tool, we revoke its access to Instagram and delete the tokens, the app credentials, the logs, the weekly totals and the storage space and keys at Backblaze. The account owner can also remove the tool's access at any time in the Instagram account settings.</p>
+<p>We keep the publishing log, the comment actions log and the weekly totals for as long as we use the tool. We do not keep the text or usernames of comments. The account owner can also cut the tool's access at any time in Meta Business settings, by revoking the access tokens of the Tooldeck system user or by removing the Instagram account from that system user. If we stop using the tool, we revoke the token and delete it from our computer, together with the app credentials, the logs, the weekly totals and the storage space and keys at Backblaze.</p>
 
 <h2>YouTube: Tooldeck Social Publisher</h2>
 <p>The Tooldeck Social Publisher is also an internal tool that Tooldeck uses to manage its own YouTube channel. It connects to YouTube through the YouTube API Services, with the Google login of the Tooldeck channel. The tool has no other users. It is not offered or sold to anyone. By using the tool, its user agrees to be bound by the <a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube Terms of Service</a>.</p>
@@ -144,11 +144,11 @@
 <h2 id="data-deletion">How to request deletion of your data</h2>
 <p>This applies to everyone whose information may reach the Tooldeck Pin Publisher or the Tooldeck Social Publisher, for example a person who wrote a comment on a Tooldeck Instagram post.</p>
 <ul>
-  <li><strong>What we hold about you.</strong> Normally nothing: we do not save comments, usernames or IDs of other people (see "Instagram: information about other people"). The tools are connected only to Tooldeck's own accounts, so nobody else has given the tools access to their account.</li>
+  <li><strong>What we hold about you.</strong> Normally nothing: we do not save comments, usernames or IDs of other people (see "Instagram: information about other people"). The only thing we keep is the ID of a comment we acted on, in our own comment actions log. The tools are connected only to Tooldeck's own accounts, so nobody else has given the tools access to their account.</li>
   <li><strong>How to ask.</strong> Send a message to the Tooldeck shop on Etsy: <a href="https://tooldeck.etsy.com" rel="noopener noreferrer">tooldeck.etsy.com</a>. Write "Data deletion" and your Instagram username, and tell us which post or comment it is about. Sending a message on Etsy needs an Etsy account. Please never send us a password or a login code.</li>
   <li><strong>What we do.</strong> We check whether we hold anything about you, delete it, and answer you within 30 days.</li>
   <li><strong>Your own comments.</strong> You can delete a comment you wrote at any time in Instagram. Information that Instagram keeps is controlled by Instagram and its own privacy policy.</li>
-  <li><strong>Access to the tool.</strong> Only the Tooldeck accounts are connected. The account owner can remove the tool's access in the Instagram account settings, the Pinterest account settings and the Google security permissions page.</li>
+  <li><strong>Access to the tool.</strong> Only the Tooldeck accounts are connected. The account owner can remove the tool's access in Meta Business settings for Instagram, the Pinterest account settings and the Google security permissions page.</li>
 </ul>
 
 <h2>This page</h2>
